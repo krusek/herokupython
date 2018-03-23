@@ -11,6 +11,7 @@ def index(request):
     return HttpResponse('Hello! ' * times)
 
 
+
 def db(request):
 
     greeting = Greeting()
