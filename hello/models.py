@@ -29,4 +29,4 @@ class TicketTime(models.Model):
   start = models.DateTimeField('clock-in', auto_now_add=True)
   stop = models.DateTimeField('clock-out', null=True)
   status = models.CharField(max_length=2, choices=STATUS_CHOICES, default=BACKLOG)
-  ticket = models.ForeignKey(Ticket, on_delete-models.CASCADE)
+  ticket = models.ForeignKey(Ticket, on_delete=models.CASCADE)
